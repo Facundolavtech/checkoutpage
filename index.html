@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Checkout Page</title>
+  </head>
+  <body>
+    <header>
+      <h1>Checkout</h1>
+    </header>
+
+    <div class="container">
+      <section class="section__form">
+        <form>
+          <h2>Contact Information</h2>
+          <label for="email">Email</label>
+          <input type="email" placeholder="Enter your email.." />
+          <label for="phone">Phone</label>
+          <input type="tel" placeholder="Enter your phone.." />
+
+          <h2>Shipping Address</h2>
+          <label for="fullname">Full Name</label>
+          <input type="text" placeholder="Enter your fullname.." />
+          <label for="address">Address</label>
+          <input type="text" placeholder="Your address.." />
+          <label for="city">City</label>
+          <input type="text" placeholder="Your city.." />
+          <label for="country">Country</label>
+          <input type="text" placeholder="Your country.." />
+          <label for="postalcode">Postal Code</label>
+          <input type="text" placeholder="Your postal code.." />
+          <div class="save__info">
+            <input type="checkbox" name="save" id="save" />
+            <label for="save">Save this information for next time</label>
+          </div>
+          <button type="submit">Continue</button>
+        </form>
+      </section>
+      <section class="section__price">
+        <div class="product">
+          <img src="./assets/img/mochila gucci.jpg" />
+          <div>
+            <h2>Backbag Gucci</h2>
+            <div class="price">
+              <p>$54.99</p>
+              <p>$94.99</p>
+            </div>
+            <div class="quantity">
+              <button>-</button>
+              <p>1</p>
+              <button>+</button>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <img src="./assets/img/zapatillas1.jpg" />
+          <div>
+            <h2>Nike Shoes</h2>
+            <div class="price">
+              <p id="price">$74.99</p>
+              <p>$124.99</p>
+            </div>
+            <div class="quantity">
+              <button id="zapatillasRestar">-</button>
+              <p id="quantity">1</p>
+              <button id="zapatillasSumar">+</button>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="shipping">
+          <h2>Shipping</h2>
+          <p>$19</p>
+        </div>
+        <hr />
+        <div class="total__container">
+          <h2>Total</h2>
+          <div class="total">
+            <span>$</span>
+            <p id="total">129.98</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <span class="credits"
+      >A dev challenge from devchallenges.io coded by FaculavTech |<a
+        href="https://github.com/Facundolavtech"
+        target="_blank"
+        >GitHub</a
+      ></span
+    >
+    <script src="./script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c35067d475.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
